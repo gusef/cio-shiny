@@ -1,0 +1,13 @@
+Package: CIOShiny
+Title: R Shiny Objects
+Version: 0.0.1
+Authors@R: person("Daniel", "Gusenleitner", email = "Daniel_Gusenleitner@dfci.harvard.edu", role = c("aut", "cre"))
+Description: A collection of R Shiny objects
+Depends: R (>= 3.4.0)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Import: shiny,
+        jsonlite,
+        data.table
+RoxygenNote: 6.0.1
