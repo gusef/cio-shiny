@@ -1,7 +1,3 @@
-require(jsonlite)
-require(data.table)
-require(shiny)
-
 #' R Shiny Input using a jsTree to select a node
 #'
 #' A reactive input value based on clicks on the jsTree nodes.
