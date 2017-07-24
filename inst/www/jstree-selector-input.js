@@ -134,7 +134,8 @@ $(document).on("click","div[type='jsTreeSelectorInput']",function(evt){
 // From message json to a good data json
 var messageToData = function(json) {
     // Modify json if text is missing
-    for (let i in json) {
+
+    for (var i in json) {
       // If ID is not set, use text
       // loose typing is intential to catch undefined and null
       if(json[i].id == null) {json[i].id = json[i].text;}
@@ -159,7 +160,7 @@ var messageToData = function(json) {
 };
 
 var selectTreeByID = function (data,selected) {
-  for (let x in data) {
+  for (var x in data) {
     if(data[x].id === selected) {
       data[x].state.selected = true;
     }
